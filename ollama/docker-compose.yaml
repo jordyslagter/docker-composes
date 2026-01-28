@@ -12,7 +12,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.openwebui.rule=Host(`openwebui.localhost`)"
-      - "traefik.http.services.app.loadbalancer.server.port=8080"
+      - "traefik.http.services.openwebui.loadbalancer.server.port=8080"
   ollama:
     container_name: ollama
     image: ollama/ollama
